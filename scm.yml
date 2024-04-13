@@ -6,13 +6,15 @@
     - name: this task is to install pip
       yum:
         name: python3-pip 
-    - name: this task to install djgao package
+    - name: this task to install django package
       pip:
         name: django
+        executable: pip3
+    - name: install Jinja2
+      pip:
+        name: jinja2
         executable: pip3
     - name: Gunicorn install
       pip:
         name: gunicorn
         executable: pip3
-
-
